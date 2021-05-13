@@ -1,27 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react'
 
 /* Routes */
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 /* Axios */
-import axios from "axios";
+import axios from 'axios'
 
 /* Styles */
-import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap";
+import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap'
 
 /* Components */
-import Rating from "../components/Rating";
+import Rating from '../components/Rating'
 
 const ProductScreen = ({ match }) => {
-  const [product, setProduct] = useState({});
+  const [product, setProduct] = useState({})
 
   useEffect(() => {
     const fetchProduct = async () => {
-      const { data } = await axios.get(`/api/products/${match.params.id}`);
-      setProduct(data);
-    };
-    fetchProduct();
-  }, [match]);
+      const { data } = await axios.get(`/api/products/${match.params.id}`)
+      setProduct(data)
+    }
+    fetchProduct()
+  }, [match])
 
   return (
     <>
@@ -62,7 +62,7 @@ const ProductScreen = ({ match }) => {
                 <Row>
                   <Col>Status:</Col>
                   <Col>
-                    {product.countInStock > 0 ? "In Stock" : "Out Of Stock"}
+                    {product.countInStock > 0 ? 'In Stock' : 'Out Of Stock'}
                   </Col>
                 </Row>
               </ListGroup.Item>
@@ -80,7 +80,7 @@ const ProductScreen = ({ match }) => {
         </Col>
       </Row>
     </>
-  );
-};
+  )
+}
 
-export default ProductScreen;
+export default ProductScreen

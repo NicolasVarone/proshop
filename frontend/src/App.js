@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react'
 
 /* Routes */
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 /* Styles */
-import { Container } from "react-bootstrap";
+import { Container } from 'react-bootstrap'
 
 /* Components */
-import Header from "./components/Header";
-import HomeScreen from "./screens/HomeScreen";
-import ProductScreen from "./screens/ProductScreen";
-import Footer from "./components/Footer";
+import Header from './components/Header'
+import HomeScreen from './screens/HomeScreen'
+import ProductScreen from './screens/ProductScreen'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -24,7 +24,7 @@ const App = () => {
       </main>
       <Footer />
     </Router>
-  );
-};
+  )
+}
 
-export default App;
+export default App
