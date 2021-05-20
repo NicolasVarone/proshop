@@ -1,12 +1,6 @@
 import React from 'react'
-
-/* Routes */
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-
-/* Styles */
 import { Container } from 'react-bootstrap'
-
-/* Components */
 import Header from './components/Header'
 import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
